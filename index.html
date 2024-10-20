@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cartão Virtual</title>
+</head>
+<body>
+    <div class="cartao">
+        <h1>Feliz Aniversário, [Nome]!</h1>
+        <p>Desejo que seu dia seja repleto de alegria e surpresas!</p>
+        <button onclick="revealGift()">Revele seu presente!</button>
+        <div id="presente" class="presente" style="display: none;">
+            🎁 Aqui está um presente virtual: [Link ou mensagem personalizada]
+        </div>
+    </div>
+
+    <script>
+        function revealGift() {
+            document.getElementById('presente').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
